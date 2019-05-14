@@ -1,0 +1,12 @@
+// Common
+@import 'styles/common/normalize';
+@import 'styles/common/fonts';
+@import 'styles/common/common';
+
+// Helpers
+@import 'styles/helpers/mixs';
+@import "styles/helpers/animations";
+
+// Blocks
+@import 'styles/blocks/main-header';
+@import 'styles/blocks/main-footer';

@@ -1,0 +1,7 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.main-footer {
+  // Прижимаем футер к низу экрана
+  margin-top: auto;
+}

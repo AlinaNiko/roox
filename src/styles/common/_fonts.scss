@@ -1,0 +1,10 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+@font-face {
+    font-family: 'ProximaNova';
+    font-display: swap;
+    src: local('ProximaNova-Black'), url($fontDir + 'ProximaNova/ProximaNova-Black.woff2') format('woff2'), url($fontDir + 'ProximaNova/ProximaNova-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
