@@ -1,10 +1,30 @@
 @import '../helpers/variables';
 @import '../helpers/mixins';
 
+// Lato
 @font-face {
-    font-family: 'ProximaNova';
+    font-family: 'Lato';
+    src: url($fontDir + 'Lato-Light.woff2') format('woff2'),
+    url($fontDir + 'Lato-Light.woff') format('woff');
     font-display: swap;
-    src: local('ProximaNova-Black'), url($fontDir + 'ProximaNova/ProximaNova-Black.woff2') format('woff2'), url($fontDir + 'ProximaNova/ProximaNova-Black.woff') format('woff');
-    font-weight: 900;
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url($fontDir + 'Lato-Regular.woff2') format('woff2'),
+    url($fontDir + 'Lato-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url($fontDir + 'Lato-Medium.woff2') format('woff2'),
+    url($fontDir + 'Lato-Medium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
     font-style: normal;
 }

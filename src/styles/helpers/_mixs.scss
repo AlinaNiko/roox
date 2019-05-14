@@ -8,7 +8,7 @@
   margin: 0 auto;
   padding: 0 $gutter;
   width: 100%;
-  @include breakpoint(el) {
+  /*@include breakpoint(el) {
     max-width: 992px;
   }
   @include breakpoint(lg) {
@@ -19,7 +19,7 @@
   }
   @include breakpoint(sm) {
     max-width: 480px;
-  }
+  }*/
 }
 
 .visually-hidden {
