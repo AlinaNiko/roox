@@ -4,8 +4,8 @@
 // Lato
 @font-face {
     font-family: 'Lato';
-    src: url($fontDir + 'Lato-Light.woff2') format('woff2'),
-    url($fontDir + 'Lato-Light.woff') format('woff');
+    src: url($fontDir + 'Lato/Lato-Light.woff2') format('woff2'),
+    url($fontDir + 'Lato/Lato-Light.woff') format('woff');
     font-display: swap;
     font-weight: 200;
     font-style: normal;
@@ -13,8 +13,8 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url($fontDir + 'Lato-Regular.woff2') format('woff2'),
-    url($fontDir + 'Lato-Regular.woff') format('woff');
+    src: url($fontDir + 'Lato/Lato-Regular.woff2') format('woff2'),
+    url($fontDir + 'Lato/Lato-Regular.woff') format('woff');
     font-display: swap;
     font-weight: 400;
     font-style: normal;
@@ -22,8 +22,8 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url($fontDir + 'Lato-Medium.woff2') format('woff2'),
-    url($fontDir + 'Lato-Medium.woff') format('woff');
+    src: url($fontDir + 'Lato/Lato-Medium.woff2') format('woff2'),
+    url($fontDir + 'Lato/Lato-Medium.woff') format('woff');
     font-display: swap;
     font-weight: 500;
     font-style: normal;
