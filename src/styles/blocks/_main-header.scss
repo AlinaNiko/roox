@@ -1,18 +1,19 @@
 @import '../helpers/variables';
 @import '../helpers/mixins';
 
+
 .main-header {
   background: $darkOrange no-repeat;
   background-size: cover;
-  background-image: url("../images/background-banner.jpg");
+  background-image: url($imageDir + "background-banner.jpg");
   @media (max-width: 1920px) {
-    background-image: url("../images/background-banner--1920.jpg");
+    background-image: url($imageDir + "background-banner--1920.jpg");
   }
   @include breakpoint(md) {
-    background-image: url("../images/background-banner--768.jpg");
+    background-image: url($imageDir + "background-banner--768.jpg");
   }
   @media (max-width: 320px) {
-    background-image: url("../images/background-banner--320.jpg");
+    background-image: url($imageDir + "background-banner--320.jpg");
   }
 }
 

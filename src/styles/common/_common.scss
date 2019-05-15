@@ -26,6 +26,7 @@ body {
   color: $black;
   background: $white;
   text-rendering: optimizeLegibility;
+  overflow-x:hidden;
 }
 
 a {
