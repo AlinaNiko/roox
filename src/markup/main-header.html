@@ -5,14 +5,14 @@
         <source type="image/webp" srcset="images/logo.webp">
         <img class="top-bar__logo-image" src="images/logo.png" alt="Логотип">
       </picture>
-      <div class="top-bar__navigation-button-wrapper">
-        <p class="top-bar__navigation-menu">Меню</p>
-        <button class="top-bar__navigation-button navigation-button"><span class="v1isually-hidden">Открыть меню</span></button>
-      </div>
-      <nav class="top-bar__navigation navigation">
+      <nav class="top-bar__navigation navigation navigation--closed">
+        <div class="navigation__button-wrapper">
+          <p class="navigation__menu">Menu</p>
+          <button class="navigation__button"><span class="visually-hidden">Меню</span></button>
+        </div>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Главная</a>
+            <a class="navigation__link navigation__link--active" href="#">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Применение</a>

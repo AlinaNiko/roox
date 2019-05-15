@@ -1,2 +1,18 @@
 @import '../helpers/variables';
 @import '../helpers/mixins';
+
+.main-header {
+  background: $darkOrange;
+}
+
+.main-header__container {
+  flex-direction: column;
+}
+
+.main-header__top-bar {
+  padding: 25px 0;
+}
+
+.main-header__banner {
+  padding: 176px 0 250px 0;
+}
