@@ -1,0 +1,72 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.easy-authentication {
+  padding: 80px 0 90px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 24px;
+  @include breakpoint(md) {
+    font-size: 20px;
+  }
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+}
+
+.easy-authentication__container {
+  flex-direction: column;
+}
+
+.easy-authentication__title {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.easy-authentication__paragraph {
+  max-width: 540px;
+  margin: 50px auto 0;
+  @include breakpoint(md) {
+    margin: 25px auto 0;
+  }
+}
+
+.easy-authentication__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 100px;
+  @media (max-width: 860px){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.easy-authentication__item {
+  position: relative;
+  max-width: 272px;
+  padding-top: 155px;
+  &::before {
+    @include pseudo();
+    top: 0;
+    left: 50%;
+    margin-left: -60px;
+    width: 120px;
+    height: 120px;
+  }
+  &--security-payment::before {
+    background: url($iconDir + "symbols.svg#security-payment") no-repeat;
+  }
+}
