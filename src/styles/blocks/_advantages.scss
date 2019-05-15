@@ -1,0 +1,91 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.advantages {
+  padding: 80px 0 90px;
+}
+
+.advantages__container {
+  flex-direction: column;
+}
+
+.advantages__subtitle {
+  font-weight: 500;
+  font-size: 36px;
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.advantages__list {
+  margin-top: 50px;
+  font-weight: 200;
+  font-size: 24px;
+  @include breakpoint(md) {
+    font-size: 20px;
+  }
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+}
+
+.advantages__item:not(:first-of-type) {
+  margin-top: 30px;
+  @include breakpoint(md) {
+    margin-top: 15px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 55px;
+  &::before {
+    @include pseudo();
+    top: 50%;
+    left: 0;
+    margin-top: -16px;
+    width: 30px ;
+    height: 15px;
+    border-left: 3px solid #00a137;
+    border-bottom: 3px solid #00a137;
+    transform: rotate(-45deg);
+  }
+}
+
+.advantages__wrapper {
+  position: relative;
+  &::before,
+  &::after {
+    @include pseudo();
+    height: 300px;
+  }
+}
+
+.advantages__wrapper--for-operators {
+  max-width: 670px;
+  margin-left: auto;
+  //padding-left: 500px;
+  &::before {
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: url($imageDir + "advantages-UIDM.png") no-repeat;
+  }
+}
+
+.advantages__wrapper--for-users {
+  max-width: 570px;
+  margin-top: 90px;
+  margin-right: auto;
+  //padding-right: 600px;
+  &::after {
+    right: 0;
+    bottom: 0;
+    width: 390px;
+  }
+}
+
