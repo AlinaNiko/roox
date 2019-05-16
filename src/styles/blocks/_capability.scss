@@ -1,3 +1,121 @@
 @import '../helpers/variables';
 @import '../helpers/mixins';
+@import '../helpers/sprite';
 
+
+.capability {
+  padding: 90px 0 80px;
+  background: $white url($imageDir + "background-capability.jpg") no-repeat;
+  background-size: cover;
+}
+
+.capability__title {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.capability__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  @media (max-width: 1041px) {
+    justify-content: space-around;
+  }
+  @media (max-width: 850px) {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.capability__item {
+  position: relative;
+  width: calc((100% - 60px)/3);
+  max-width: 310px;
+  margin-top: 70px;
+  padding-top: 100px;
+  font-size: 18px;
+  text-align: center;
+  &::before {
+    @include pseudo();
+    top: 0;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 70px;
+  }
+  @media (max-width: 1041px) {
+    width: calc((100% - 30px)/2);
+    max-width: 350px;
+  }
+  @media (max-width: 850px) {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+  }
+  @include breakpoint(md) {
+    font-size: 16px;
+    margin-top: 35px;
+  }
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.capability__item--capability1 {
+  &::before {
+    @extend %-svg-capability1;
+  }
+}
+
+.capability__item--capability2 {
+  &::before {
+    @extend %-svg-capability2;
+  }
+}
+
+.capability__item--capability3 {
+  &::before {
+    @extend %-svg-capability3;
+  }
+}
+
+.capability__item--capability4 {
+  &::before {
+    @extend %-svg-capability4;
+  }
+}
+
+.capability__item--capability5 {
+  &::before {
+    @extend %-svg-capability5;
+  }
+}
+
+.capability__item--capability6 {
+  &::before {
+    @extend %-svg-capability6;
+  }
+}
+
+
+.capability__subtitle {
+  font-weight: 500;
+}
+
+.capability__paragraph {
+  margin-top: 20px;
+  font-weight: 200;
+  @media (max-width: 400px) {
+    margin-top: 10px;
+  }
+}
