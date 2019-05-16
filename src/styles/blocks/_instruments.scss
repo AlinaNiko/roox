@@ -1,2 +1,197 @@
 @import '../helpers/variables';
 @import '../helpers/mixins';
+
+.instruments {
+  padding: 90px 0 40px;
+  background: $darkOrange url($imageDir + "background-instruments.jpg") no-repeat;
+  background-size: cover;
+}
+
+.instruments__container {
+  position: relative;
+  flex-direction: column;
+
+}
+
+.instruments__title {
+  margin-bottom: 35px;
+  font-weight: 500;
+  font-size: 36px;
+  color: $white;
+  text-align: center;
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.instruments__wrapper {
+  @include breakpoint(el) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.instruments__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 426px;
+  height: 426px;
+  margin: 0 auto;
+  padding: 40px;
+  font-size: 36px;
+  color: $mainOrange;
+  background-color: $white;
+  background-clip: padding-box;
+  border: 48px solid rgba(255,255,255,.75);
+  border-radius: 50%;
+  @include breakpoint(el) {
+    margin-right: 30px;
+    margin-left: 0;
+  }
+  @media (max-width: 1016px) {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: 0;
+    padding: 20px;
+    height: auto;
+    border: 30px solid rgba(255,255,255,.75);
+    border-radius: 30px;
+  }
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 680px) {
+    padding: 10px;
+    font-size: 24px;
+    border: 15px solid rgba(255,255,255,.75);
+  }
+  @media (max-width: 580px) {
+    font-size: 20px;
+  }
+  @media (max-width: 458px ) {
+    font-size: 16px;
+    border: 5px solid rgba(255,255,255,.75);
+  }
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.instruments__item:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.instruments__item--first {
+  margin-left: 30px;
+  @media (max-width: 1016px) {
+    margin-left: 0;
+  }
+}
+
+.instruments__item--second {
+  margin-left: auto;
+  @media (max-width: 1016px) {
+    margin-left: 0;
+  }
+}
+
+.instruments__item--fourth {
+  margin-left: auto;
+  @media (max-width: 1016px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.instruments__item--fifth {
+  margin: 10px auto 0;
+  @media (max-width: 1016px) {
+    margin: 0;
+  }
+}
+
+.instruments__paragraph {
+  position: absolute;
+  padding: 30px 50px;
+  font-weight: 200;
+  font-size: 18px;
+  background-color: $white;
+  &::before {
+    @include pseudo();
+    top: 50%;
+    margin-top: -21px;
+    border: 20px solid transparent;
+    @include breakpoint(el) {
+      display: none;
+    }
+  }
+  @include breakpoint(el) {
+    position: static;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  @media (max-width: 1016px) {
+    background-color: rgba(255,255,255,.75);
+  }
+  @include breakpoint(md) {
+    font-size: 16px;
+  }
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+
+}
+
+.instruments__paragraph--left {
+  top: 150px;
+  left: -10px;
+  max-width: 450px;
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.25);
+  &::before {
+    right: -40px;
+    border-left: 20px solid $white;
+  }
+  @include breakpoint(el) {
+    max-width: 500px;
+    margin-left: auto;
+  }
+  @media (max-width: 1016px) {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  @media (max-width: 400px) {
+    margin-top: 15px;
+  }
+}
+
+.instruments__paragraph--right {
+  right: -30px;
+  bottom: 50px;
+  max-width: 480px;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.25);
+  &::before {
+    left: -40px;
+    border-right: 20px solid $white;
+  }
+  @include breakpoint(el) {
+    max-width: 500px;
+    margin-left: auto;
+    margin-top: 30px;
+  }
+  @media (max-width: 1016px) {
+    width: 100%;
+    max-width: 100%;
+  }
+  @media (max-width: 400px) {
+    margin-top: 15px;
+  }
+}
