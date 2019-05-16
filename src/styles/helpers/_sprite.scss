@@ -1,0 +1,25 @@
+%svg-common {
+	background: url("../icons/sprite.svg") no-repeat;
+}
+
+%-svg-company {
+	@extend %svg-common;
+	background-position: 0 0;
+	width: 120px;
+	height: 120px;
+}
+
+%-svg-operators {
+	@extend %svg-common;
+	background-position: 0 50%;
+	width: 120px;
+	height: 120px;
+}
+
+%-svg-security-payment {
+	@extend %svg-common;
+	background-position: 0 100%;
+	width: 120px;
+	height: 120px;
+}
+

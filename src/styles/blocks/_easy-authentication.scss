@@ -1,5 +1,6 @@
 @import '../helpers/variables';
 @import '../helpers/mixins';
+@import '../helpers/sprite';
 
 
 .easy-authentication {
@@ -61,11 +62,41 @@
 .easy-authentication__item {
   position: relative;
   max-width: 272px;
+  padding-top: 153px;
+  &::before {
+    @include pseudo();
+    top:0;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: -60px;
+  }
+  @media (max-width: 860px){
+    padding-top: 133px;
+  }
+}
+
+.easy-authentication__item--security-payment {
+  &::before {
+    @extend %-svg-security-payment;
+  }
+}
+
+.easy-authentication__item--operators {
+  &::before {
+    @extend %-svg-operators;
+  }
+}
+
+.easy-authentication__item--company {
+  &::before {
+    @extend %-svg-company;
+  }
 }
 
 .easy-authentication__item:not(:first-of-type) {
   @media (max-width: 860px){
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
 
