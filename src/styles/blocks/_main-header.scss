@@ -6,6 +6,10 @@
   background: $darkOrange no-repeat;
   background-size: cover;
   background-image: url($imageDir + "background-banner.jpg");
+  @media (max-width: 1800px) {
+    background-image: url($imageDir + "background-banner--1800.jpg");
+    background-position-x: -100px;
+  }
   @include breakpoint(md) {
     background-image: url($imageDir + "background-banner--768.jpg");
   }
