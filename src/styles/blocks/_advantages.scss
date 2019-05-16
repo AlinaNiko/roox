@@ -19,7 +19,7 @@
     @include pseudo();
     height: 300px;
     z-index: 0;
-    @media (max-width: 617px) {
+    @include breakpoint(md){
       display: none;
     }
   }
