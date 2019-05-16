@@ -42,21 +42,11 @@
 
 .banner__button {
   margin-top: 55px;
-  font-size: 24px;
-  color: $white;
-  background-color: $mainOrange;
-  transition: transform .3s ease-out;
-  @media (min-width: 769px) {
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
   @include breakpoint(md) {
     margin-top: 45px;
   }
   @media (max-width: 400px) {
     margin-top: 25px;
-    font-size: 20px;
   }
 }
 
