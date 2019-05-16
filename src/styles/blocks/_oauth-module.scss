@@ -4,9 +4,13 @@
 
 .oauth-module {
   position: relative;
-  padding: 90px 0 80px ;
+  padding: 90px 0;
   background-color: $white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  z-index: 2;
+  @include breakpoint(md){
+    padding: 60px 0;
+  }
 }
 
 .oauth-module__container {

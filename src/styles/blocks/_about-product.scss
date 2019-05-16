@@ -17,6 +17,9 @@
     background-image: url($imageDir + "background-about-product--992.jpg");
     background-position-x: 0;
   }
+  @include breakpoint(md){
+    padding: 60px 0;
+  }
   @media (max-width: 320px) {
     background-image: url($imageDir + "background-about-product--320.jpg");
   }

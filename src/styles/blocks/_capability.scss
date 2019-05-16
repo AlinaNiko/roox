@@ -4,9 +4,14 @@
 
 
 .capability {
-  padding: 90px 0 80px;
+  position: relative;
+  padding: 90px 0;
   background: $white url($imageDir + "background-capability.jpg") no-repeat;
   background-size: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  @include breakpoint(md){
+    padding: 60px 0;
+  }
 }
 
 .capability__title {

@@ -5,6 +5,9 @@
   padding: 90px 0 40px;
   background: $darkOrange url($imageDir + "background-instruments.jpg") no-repeat;
   background-size: cover;
+  @include breakpoint(md){
+    padding: 60px 0 40px;
+  }
 }
 
 .instruments__container {

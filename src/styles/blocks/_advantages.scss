@@ -3,9 +3,12 @@
 
 
 .advantages {
-  padding: 90px 0 80px;
+  padding: 90px 0;
   background: $white url($imageDir + "background-advantages.jpg") no-repeat;
   background-size: cover;
+  @include breakpoint(md){
+    padding: 60px 0;
+  }
 }
 
 .advantages__container {
@@ -87,7 +90,7 @@
 
 .advantages__item {
   position: relative;
-  padding-left: 55px;
+  padding-left: 50px; //55px
   &::before {
     @include pseudo();
     top: 50%;
