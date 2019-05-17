@@ -11,9 +11,6 @@
 .top-bar__logo {
   max-width: 93px;
   margin-right: 20px;
-  @media (max-width: 400px) {
-    display: none;
-  }
 }
 
 .top-bar__navigation {

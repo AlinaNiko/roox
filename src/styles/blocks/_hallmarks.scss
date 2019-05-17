@@ -9,6 +9,10 @@
   color: $white;
   @include breakpoint(md){
     padding: 60px 0;
+    background-image: url($imageDir + "hallmarks-background--768.jpg");
+  }
+  @media (max-width: 320px) {
+    background-image: url($imageDir + "hallmarks-background--320.jpg");
   }
 }
 

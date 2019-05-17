@@ -7,6 +7,10 @@
   background-size: cover;
   @include breakpoint(md){
     padding: 60px 0 40px;
+    background-image: url($imageDir + "background-instruments--768.jpg");
+  }
+  @media (max-width: 320px) {
+    background-image: url($imageDir + "background-instruments--320.jpg");
   }
 }
 
