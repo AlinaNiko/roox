@@ -80,6 +80,10 @@
     color: #aaa;
   }
   @include placeholderHidden;
+  //Цвет ошибки
+  &.has-error {
+    border-color: #fb794f;
+  }
 }
 
 .popup-request__button {
