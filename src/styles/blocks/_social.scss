@@ -1,0 +1,25 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+@import '../helpers/sprite';
+
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 170px;
+  width: 100%;
+  @media (max-width: 730px) {
+    max-width: 100%;
+  }
+}
+
+.social__link {
+  fill: $mainOrange;
+  transition: fill .3s ease-out;
+  &:hover,
+  &:focus,
+  &:active {
+    fill: $white;
+  }
+}
+

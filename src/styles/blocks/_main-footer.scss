@@ -4,4 +4,125 @@
 .main-footer {
   // Прижимаем футер к низу экрана
   margin-top: auto;
+  padding: 50px 0;
+  color: $white;
+  background: $darkOrange url($imageDir + "background-footer.jpg") no-repeat;
+  background-size: cover;
+  @include breakpoint(md){
+    padding: 30px 0;
+  }
 }
+
+.main-footer__container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media (max-width: 730px) {
+    flex-direction: column;
+  }
+}
+
+.main-footer__title {
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+  @media (max-width: 730px) {
+    text-align: center;
+  }
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-footer__wrapper--add-info {
+  align-items: flex-start;
+  max-width: 470px;
+  @media (max-width: 730px) {
+    order: 1;
+    align-items: center;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+
+.main-footer__wrapper--links {
+  align-items: flex-end;
+  max-width: 200px;
+  @media (max-width: 730px) {
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.main-footer__paragraph {
+  margin-top: 30px;
+  font-size: 18px;
+  @include breakpoint(md) {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.main-footer__paragraph--small {
+  font-weight: 200;
+  font-size: 14px;
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
+}
+
+.main-footer__developer {
+  margin-top: 50px;
+  @include breakpoint(md) {
+    margin-top: 25px;
+  }
+}
+
+.main-footer__social {
+  margin-top: 30px;
+  @include breakpoint(md) {
+    margin-top: 15px;
+  }
+}
+
+.main-footer__contact {
+  margin-top: 20px;
+  font-size: 18px;
+  @include breakpoint(md) {
+    font-size: 16px;
+  }
+  /*@media (max-width: 400px) {
+    font-size: 14px;
+  }*/
+}
+
+.main-footer__contact-link {
+  color: inherit;
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.main-footer__button {
+  margin-top: 20px;
+  min-width: 200px;
+  font-weight: 200;
+  font-size: 18px;
+  color: $black;
+  background-color: $white;
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: $white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  }
+}
+

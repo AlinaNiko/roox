@@ -44,7 +44,15 @@
   border-radius: 50px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color.3s ease-out;
-  @media (min-width: 769px) {
+  &:hover,
+  &:focus {
+    background-color: $lightOrange;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+  /*@media (min-width: 769px) {
     &:hover,
     &:focus {
       background-color: $lightOrange;
@@ -53,7 +61,7 @@
     &:active {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     }
-  }
+  }*/
   @media (max-width: 400px) {
     font-size: 20px;
   }
