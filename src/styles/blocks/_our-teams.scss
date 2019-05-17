@@ -4,6 +4,8 @@
 
 .our-teams {
   padding: 90px 0;
+  background: $white url($imageDir + "background-our-team.jpg") no-repeat;
+  background-size: cover;
   @include breakpoint(md){
     padding: 60px 0;
   }
