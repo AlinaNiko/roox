@@ -1,0 +1,39 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.modal--opened {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.modal__popup {
+  position: relative;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 200;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: 150;
+}
+
+.modal--closed {
+  display: none;
+}
