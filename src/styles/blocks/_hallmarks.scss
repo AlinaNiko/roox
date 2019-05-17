@@ -1,0 +1,74 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.hallmarks {
+  padding: 90px 0;
+  background: $darkOrange url($imageDir + "hallmarks-background.jpg") no-repeat;
+  background-size: cover;
+  color: $white;
+  @include breakpoint(md){
+    padding: 60px 0;
+  }
+}
+
+.hallmarks__container {
+  position: relative;
+  &::before {
+    @include pseudo();
+    top: 50%;
+    right: 0;
+    margin-top: -156px;
+    width: 496px;
+    height: 312px;
+    background: url($imageDir + "background-hallmarks-server.png") right center no-repeat;
+    z-index: 0;
+    @media (max-width: 1070px) {
+      left: 50%;
+      margin-left: -248px;
+      opacity: .2;
+    }
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+}
+
+.hallmarks__wrapper {
+  position: relative;
+  max-width: 570px;
+  z-index: 2;
+  @media (max-width: 1070px) {
+    margin: 0 auto;
+  }
+}
+
+.hallmarks__title {
+  font-weight: 500;
+  font-size: 36px;
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.hallmarks__list {
+  margin-top: 40px;
+  font-size: 18px;
+  @include breakpoint(md) {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.hallmarks__item:not(:first-of-type) {
+  margin-top: 20px;
+  @include breakpoint(md) {
+    margin-top: 10px;
+  }
+}
