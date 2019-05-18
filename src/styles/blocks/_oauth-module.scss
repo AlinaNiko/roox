@@ -15,9 +15,23 @@
 
 .oauth-module__container {
   position: relative;
-  background: url($imageDir + "server.png") right center no-repeat;
-  @media (max-width: 1120px) {
-    background: none;
+  &::before {
+    @include pseudo();
+    right: 0;
+    top: 80px;
+    width: 413px;
+    height: 388px;
+    z-index: 0;
+    background: url($imageDir + "server.png") no-repeat;
+    @include breakpoint(el) {
+      opacity: .1;
+    }
+    @include breakpoint(lg) {
+      top: 120px;
+    }
+    @include breakpoint(md) {
+      display: none;
+    }
   }
 }
 

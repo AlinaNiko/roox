@@ -41,11 +41,12 @@
 
 .navigation__link {
   color: inherit;
-  transition: color .3s ease-out;
+  transition: all .3s ease-out;
   @media (min-width: 769px) {
     &:hover,
     &:focus {
       color: $mainOrange;
+      cursor: pointer;
     }
   }
   @include breakpoint(md) {
@@ -54,6 +55,7 @@
     &:hover,
     &:focus {
       background-color: $mainOrange;
+      cursor: pointer;
     }
   }
 }
@@ -74,7 +76,9 @@
 }
 
 .navigation--opened .navigation__link--active {
-  background-color: $mainOrange;
+  @include breakpoint(md) {
+    background-color: $mainOrange;
+  }
 }
 
 .navigation__menu {
@@ -94,6 +98,15 @@
     width: 30px;
     height: 2px;
     background-color: $white;
+    transition: all .3s ease-out;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    &::before,
+    &::after {
+      background-color: $mainOrange;
+    }
   }
 }
 

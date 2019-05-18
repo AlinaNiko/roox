@@ -5,6 +5,9 @@
 .banner {
   max-width: 770px;
   color: $white;
+  @include breakpoint(el) {
+    max-width: 600px;
+  }
 }
 
 .banner__title {

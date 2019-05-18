@@ -36,7 +36,7 @@
   @media (max-width: 1041px) {
     justify-content: space-around;
   }
-  @media (max-width: 850px) {
+  @include breakpoint(md) {
     width: 100%;
     margin-top: 0;
   }
@@ -62,7 +62,10 @@
     width: calc((100% - 30px)/2);
     max-width: 350px;
   }
-  @media (max-width: 850px) {
+  @include breakpoint(lg) {
+    max-width: 320px;
+  }
+  @include breakpoint(md) {
     width: 100%;
     max-width: 450px;
     margin-top: 50px;

@@ -5,26 +5,26 @@
         <source type="image/webp" srcset="images/logo.webp">
         <img class="top-bar__logo-image" src="images/logo.png" alt="Логотип">
       </picture>
-      <nav class="top-bar__navigation navigation navigation--closed">
+      <nav class="top-bar__navigation navigation navigation--closed"> <!--модификатор opened - открывает меню, closed - скрывает-->
         <div class="navigation__button-wrapper">
           <p class="navigation__menu">Menu</p>
           <button class="navigation__button"><span class="visually-hidden">Меню</span></button>
         </div>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--active" href="#">Главная</a>
+            <a class="navigation__link navigation__link--active js-anchor" href="#main-header">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Применение</a>
+            <a class="navigation__link js-anchor" href="#about-product">Применение</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Возможности</a>
+            <a class="navigation__link js-anchor" href="#capability">Возможности</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Клиенты</a>
+            <a class="navigation__link js-anchor" href="#our-clients">Клиенты</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Контакты</a>
+            <a class="navigation__link js-anchor" href="#main-footer">Контакты</a>
           </li>
         </ul>
       </nav>

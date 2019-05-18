@@ -8,7 +8,7 @@
   margin: 0 auto;
   padding: 0 $gutter;
   width: 100%;
-  /*@include breakpoint(el) {
+  @include breakpoint(el) {
     max-width: 992px;
   }
   @include breakpoint(lg) {
@@ -19,7 +19,7 @@
   }
   @include breakpoint(sm) {
     max-width: 480px;
-  }*/
+  }
 }
 
 .visually-hidden {
@@ -43,7 +43,7 @@
   background-color: $mainOrange;
   border-radius: 50px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color.3s ease-out;
+  transition: all .3s ease-out;
   &:hover,
   &:focus {
     background-color: $lightOrange;
@@ -64,5 +64,19 @@
   }*/
   @media (max-width: 400px) {
     font-size: 20px;
+  }
+}
+
+.button--white {
+  min-width: 200px;
+  font-weight: 200;
+  font-size: 18px;
+  color: $black;
+  background-color: $white;
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: $white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
   }
 }

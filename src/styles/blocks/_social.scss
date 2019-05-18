@@ -8,7 +8,7 @@
   justify-content: space-between;
   max-width: 170px;
   width: 100%;
-  @media (max-width: 730px) {
+  @include breakpoint(md) {
     max-width: 100%;
   }
 }

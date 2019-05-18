@@ -61,7 +61,7 @@
     margin-right: 30px;
     margin-left: 0;
   }
-  @media (max-width: 1016px) {
+  @include breakpoint(lg) {
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
@@ -73,11 +73,10 @@
     border-radius: 30px;
   }
   @include breakpoint(md) {
-    font-size: 30px;
+    font-size: 24px;
   }
   @media (max-width: 680px) {
     padding: 10px;
-    font-size: 24px;
     border: 15px solid rgba(255,255,255,.75);
   }
   @media (max-width: 580px) {
@@ -98,21 +97,21 @@
 
 .instruments__item--first {
   margin-left: 30px;
-  @media (max-width: 1016px) {
+  @include breakpoint(lg) {
     margin-left: 0;
   }
 }
 
 .instruments__item--second {
   margin-left: auto;
-  @media (max-width: 1016px) {
+  @include breakpoint(lg) {
     margin-left: 0;
   }
 }
 
 .instruments__item--fourth {
   margin-left: auto;
-  @media (max-width: 1016px) {
+  @include breakpoint(lg) {
     margin-left: 0;
     margin-right: 0;
   }
@@ -120,7 +119,7 @@
 
 .instruments__item--fifth {
   margin: 10px auto 0;
-  @media (max-width: 1016px) {
+  @include breakpoint(lg) {
     margin: 0;
   }
 }
@@ -145,13 +144,14 @@
     padding: 30px;
     border-radius: 30px;
   }
-  @media (max-width: 1016px) {
+  @include breakpoint(lg) {
     background-color: rgba(255,255,255,.75);
   }
   @include breakpoint(md) {
     font-size: 16px;
   }
   @media (max-width: 400px) {
+    padding: 20px;
     font-size: 14px;
   }
 
@@ -167,10 +167,10 @@
     border-left: 20px solid $white;
   }
   @include breakpoint(el) {
-    max-width: 500px;
+    //max-width: 500px;
     margin-left: auto;
   }
-  @media (max-width: 1016px) {
+  @include breakpoint(lg) {
     width: 100%;
     max-width: 100%;
     margin-top: 30px;
@@ -190,11 +190,12 @@
     border-right: 20px solid $white;
   }
   @include breakpoint(el) {
-    max-width: 500px;
+    //max-width: 500px;
+    max-width: 450px;
     margin-left: auto;
     margin-top: 30px;
   }
-  @media (max-width: 1016px) {
+  @include breakpoint(lg) {
     width: 100%;
     max-width: 100%;
   }
