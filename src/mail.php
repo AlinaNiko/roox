@@ -5,7 +5,7 @@ $c = true;
 if ( $method === 'POST' ) {
 	$project_name = trim($_POST["project_name"]);
 	$form_subject = 'Вопрос с сайта Roox';
-	$to = 'support@roox.com';
+	$to = 'artur.dovgar@senurable.com';
 	foreach ( $_POST as $key => $value ) {
 		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
 			$message .= "

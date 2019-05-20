@@ -1,0 +1,70 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.member__info {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+}
+
+.member__image-wrapper {
+  display: block;
+  width: 270px;
+  height: 270px;
+  //max-width: 255px;
+  //min-height: 255px;
+  background-color: $black;
+  overflow: hidden;
+  @media (max-width: 400px) {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+.member__image {
+  width: 100%;
+  height: auto;
+}
+
+.member__description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: $white;
+  background-color: rgba(243,161,18,.8);
+  transition: transform .3s ease-out;
+  transform: translate3d(0, -100%, 0);
+}
+
+.member__name {
+  margin-top: 30px;
+  max-width: 270px;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  color: $mainOrange;
+}
+
+.member__position {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: none;
+  color: $black;
+}
+
+.member {
+  cursor: pointer;
+}
+
+.member:hover .member__description {
+  transform:  translate3d(0, 0, 0);
+}

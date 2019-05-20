@@ -52,26 +52,12 @@
   }
 }
 
-.our-teams__image-wrapper {
-  display: block;
-  width: 270px;
-  height: 270px;
-  //max-width: 255px;
-  //min-height: 255px;
-  background-color: $black;
-  overflow: hidden;
-  @media (max-width: 400px) {
-    width: 260px;
-    height: 260px;
-  }
-}
-
 .our-teams__item:nth-child(odd) * {
   @media (max-width: 1229px) {
     margin-left: auto;
   }
   @include breakpoint(md) {
-    margin: 0 auto;
+    margin-right: auto;
   }
 }
 .our-teams__item:nth-child(even) * {
@@ -79,6 +65,6 @@
     margin-right: auto;
   }
   @include breakpoint(md) {
-    margin: 0 auto;
+    margin-left: auto;
   }
 }

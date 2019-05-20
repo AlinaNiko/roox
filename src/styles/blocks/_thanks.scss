@@ -1,0 +1,49 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.thanks__text {
+  font-size: 18px;
+  position: relative;
+  padding-top: 115px;
+  color: #333;
+  text-align: center;
+  &::before {
+    @include pseudo();
+    top: 0;
+    left: calc(50% - 50px);
+    background: url($iconDir + 'like.svg') no-repeat;
+    width: 100px;
+    height: 100px;
+  }
+  strong {
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 400;
+    display: block;
+    @include breakpoint(sm) {
+      font-size: 38px;
+    }
+  }
+}
+
+.thanks__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 40px;
+  min-width: 520px;
+  @include breakpoint(sm) {
+    min-width: auto;
+    min-height: auto;
+  }
+}
