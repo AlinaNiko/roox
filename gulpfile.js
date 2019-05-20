@@ -126,7 +126,6 @@ function compileCSS() {
         message: "Error: <%= error.message %>"
       } )
     } ) )
-    // .pipe( sourcemaps.init() )
     .pipe( scss() )
     .pipe( criticalCss() )
     .pipe( autoprefixer({
@@ -140,7 +139,6 @@ function compileCSS() {
     .pipe( rename({
       suffix: '.min'
     } ) )
-    // .pipe( sourcemaps.write() )
     .pipe( gulp.dest( path.build.css ) )
     .pipe( browserSync.stream() );
 
@@ -158,13 +156,11 @@ function compileJS() {
         message: "Error: <%= error.message %>"
       } )
     } ) )
-    // .pipe( sourcemaps.init() )
     .pipe( gulp.dest( path.build.js ) )
     .pipe( uglify() )
     .pipe( rename({
       suffix: '.min'
     }) )
-    // .pipe( sourcemaps.write() )
     .pipe( gulp.dest( path.build.js ) )
     .pipe( browserSync.stream() );
 
