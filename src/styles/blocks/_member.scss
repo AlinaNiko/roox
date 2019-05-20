@@ -7,6 +7,10 @@
   width: 270px;
   height: 270px;
   overflow: hidden;
+  @media (max-width: 400px) {
+    width: 260px;
+    height: 260px;
+  }
 }
 
 .member__image-wrapper {
@@ -51,6 +55,9 @@
   text-align: center;
   text-transform: uppercase;
   color: $mainOrange;
+  @media (max-width: 400px) {
+    max-width: 260px;
+  }
 }
 
 .member__position {
