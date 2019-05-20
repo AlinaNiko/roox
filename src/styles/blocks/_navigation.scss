@@ -3,6 +3,7 @@
 
 .navigation--opened {
   @include breakpoint(md) {
+    animation: slide-left .3s ease-in-out;
     position: fixed;
     top: 0;
     right: 0;
@@ -27,7 +28,6 @@
   @media (min-width: 769px) {
     margin-left: auto;
   }
-
 }
 
 .navigation__item:not(:last-of-type) {
@@ -42,20 +42,20 @@
 .navigation__link {
   color: inherit;
   transition: all .3s ease-out;
-  @media (min-width: 769px) {
-    &:hover,
-    &:focus {
-      color: $mainOrange;
-      cursor: pointer;
-    }
+  cursor: pointer;
+  &:hover {
+    color: $mainOrange;
   }
   @include breakpoint(md) {
     display: block;
     padding: 10px 0 10px 35px;
-    &:hover,
-    &:focus {
+    transition: none;
+    &:hover {
+      background-color: transparent;
+      color: $white;
+    }
+    &:active{
       background-color: $mainOrange;
-      cursor: pointer;
     }
   }
 }
