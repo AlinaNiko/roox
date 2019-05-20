@@ -1,0 +1,69 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.banner {
+  max-width: 770px;
+  color: $white;
+  @include breakpoint(el) {
+    max-width: 600px;
+  }
+}
+
+.banner__title {
+  font-weight: 400;
+  font-size: 36px;
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.banner__title-abbr {
+  display: block;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: $mainOrange;
+  @media (max-width: 400px) {
+    font-size: 36px;
+  }
+}
+
+.banner__paragraph {
+  margin-top: 70px;
+  font-size: 24px;
+  @include breakpoint(md) {
+    margin-top: 35px;
+    font-size: 20px;
+  }
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+}
+
+.banner__button {
+  margin-top: 55px;
+  @include breakpoint(md) {
+    margin-top: 45px;
+  }
+  @media (max-width: 400px) {
+    margin-top: 25px;
+  }
+}
+
+.bunner__button-text {
+  position: relative;
+  padding-right: 45px;
+  &::after {
+    @include pseudo();
+    top: 5px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid $white;
+    border-bottom: 1px solid $white;
+    transform: rotate(-45deg);
+  }
+}

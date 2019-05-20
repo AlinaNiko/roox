@@ -1,0 +1,30 @@
+// Common
+@import 'styles/common/normalize';
+@import 'styles/common/fonts';
+@import 'styles/common/common';
+
+// Helpers
+@import 'styles/helpers/mixs';
+@import "styles/helpers/animations";
+
+// Blocks
+@import 'styles/blocks/main-header';
+@import 'styles/blocks/top-bar';
+@import 'styles/blocks/navigation';
+@import 'styles/blocks/banner';
+@import 'styles/blocks/our-clients';
+@import 'styles/blocks/about-product';
+@import 'styles/blocks/easy-authentication';
+@import 'styles/blocks/advantages';
+@import 'styles/blocks/instruments';
+@import 'styles/blocks/oauth-module';
+@import 'styles/blocks/capability';
+@import 'styles/blocks/identifiers';
+@import 'styles/blocks/hallmarks';
+@import 'styles/blocks/our-teams';
+@import 'styles/blocks/more-details';
+@import 'styles/blocks/main-footer';
+@import 'styles/blocks/developer';
+@import 'styles/blocks/social';
+@import 'styles/blocks/modal';
+@import 'styles/blocks/popup-request';

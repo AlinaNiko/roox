@@ -1,0 +1,18 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.top-bar__logo {
+  max-width: 93px;
+  margin-right: 20px;
+}
+
+.top-bar__navigation {
+  margin-left: auto;
+}

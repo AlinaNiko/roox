@@ -1,0 +1,82 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.oauth-module {
+  position: relative;
+  padding: 90px 0;
+  background-color: $white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  z-index: 2;
+  @include breakpoint(md){
+    padding: 60px 0;
+  }
+}
+
+.oauth-module__container {
+  position: relative;
+  &::before {
+    @include pseudo();
+    right: 0;
+    top: 80px;
+    width: 413px;
+    height: 388px;
+    z-index: 0;
+    background: url($imageDir + "server.png") no-repeat;
+    @include breakpoint(el) {
+      opacity: .1;
+    }
+    @include breakpoint(lg) {
+      top: 120px;
+    }
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+}
+
+.oauth-module__title,
+.oauth-module__wrapper {
+  position: relative;
+  max-width: 700px;
+  z-index: 2;
+  @media (max-width: 1120px) {
+    max-width: 100%;
+  }
+}
+
+.oauth-module__title {
+  font-weight: 500;
+  font-size: 36px;
+  @media (max-width: 1120px) {
+    text-align: center;
+  }
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.oauth-module__wrapper {
+  margin-top: 50px;
+  font-weight: 200;
+  font-size: 18px;
+  @include breakpoint(md) {
+    margin-top: 25px;
+    font-size: 16px;
+  }
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.oauth-module__subtitle {
+  font-weight: inherit;
+}
+
+.oauth-module__subtitle:not(:first-of-type),
+.oauth-module__paragraph {
+  margin-top: 20px;
+}

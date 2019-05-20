@@ -1,0 +1,117 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+@import '../helpers/sprite';
+
+
+.easy-authentication {
+  position: relative;
+  padding: 90px 0;
+  text-align: center;
+  font-weight: 200;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  z-index: 2;
+  @include breakpoint(lg) {
+    font-size: 20px;
+  }
+  @include breakpoint(md) {
+    padding: 60px 0;
+    font-size: 20px;
+  }
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+}
+
+.easy-authentication__container {
+  flex-direction: column;
+}
+
+.easy-authentication__title {
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.easy-authentication__paragraph {
+  max-width: 570px;
+  margin: 50px auto 0;
+  @include breakpoint(md) {
+    margin: 25px auto 0;
+  }
+}
+
+.easy-authentication__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 100px;
+  @media (max-width: 770px){
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+
+.easy-authentication__item {
+  position: relative;
+  width: calc((100% - 30px)/3);
+  max-width: 272px;
+  padding-top: 153px;
+  &::before {
+    @include pseudo();
+    top:0;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: -60px;
+  }
+  @media (max-width: 770px){
+    width: 100%;
+    padding-top: 133px;
+  }
+  @media (max-width: 400px) {
+    max-width: 260px;
+  }
+}
+
+.easy-authentication__item--security-payment {
+  &::before {
+    @extend %-svg-security-payment;
+  }
+}
+
+.easy-authentication__item--operators {
+  &::before {
+    @extend %-svg-operators;
+  }
+}
+
+.easy-authentication__item--company {
+  &::before {
+    @extend %-svg-company;
+  }
+}
+
+.easy-authentication__item:not(:first-of-type) {
+  @media (max-width: 770px){
+    margin-top: 40px;
+  }
+}
+
+.easy-authentication__text {
+  margin-top: 33px;
+  @media (max-width: 770px){
+    margin-top: 15px;
+  }
+}

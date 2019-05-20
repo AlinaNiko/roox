@@ -1,0 +1,23 @@
+<section class="modal modal--closed"> <!--модификатор opened - открывает попап, closed - скрывает-->
+  <div class="modal__popup popup-request">
+    <h2 class="popup-request__title visually-hidden">Форма заявки</h2>
+    <p class="popup-request__paragraph">Задайте вопрос специалисту</p>
+    <form class="popup-request__form" action="#">
+      <label class="popup-request__item">
+        <span class="popup-request__subtitle visually-hidden">Ваше имя</span>
+        <input class="popup-request__field popup-request__field--name" name="name" type="text" placeholder="Ваше имя" required>
+      </label>
+      <label class="popup-request__item">
+        <span class="popup-request__subtitle visually-hidden">Ваш телефон</span>
+        <input class="popup-request__field popup-request__field--number" name="phone-number" type="tel" placeholder="Ваш телефон" required>
+      </label>
+      <label class="popup-request__item popup-request__item--textarea">
+        <span class="popup-request__subtitle visually-hidden">Введите Ваш вопрос</span>
+        <textarea class="popup-request__field popup-request__field--textarea" name="name" placeholder="Введите Ваш вопрос" required></textarea>
+      </label>
+      <button class="popup-request__button button" type="submit">Отправить</button>
+    </form>
+    <button class="popup-request__button-close"><span class="button-close__text visually-hidden">Закрыть окно</span></button>
+  </div>
+  <div class="modal__overlay"></div>
+</section>

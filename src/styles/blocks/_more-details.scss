@@ -1,0 +1,90 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.more-details {
+  padding: 90px 0;
+  @include breakpoint(md){
+    padding: 60px 0;
+  }
+}
+
+.more-details__container {
+  @media (min-width: 993px) {
+    background: url($imageDir + "background-more-details.jpg") right center no-repeat;
+  }
+}
+
+.more-details__wrapper {
+  margin-right: auto;
+  max-width: 670px;
+  @include breakpoint(lg) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.more-details__title {
+  font-weight: 500;
+  font-size: 36px;
+  @include breakpoint(lg) {
+    margin: 0 auto;
+    text-align: center;
+  }
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.more-details__list {
+  margin-top: 50px;
+  font-weight: 200;
+  font-size: 18px;
+  @include breakpoint(md) {
+    margin-top: 25px;
+    font-size: 16px;
+  }
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.more-details__item:not(:first-of-type) {
+  margin-top: 20px;
+  @include breakpoint(md) {
+    margin-top: 10px;
+  }
+}
+
+.more-details__button {
+  margin-top: 80px;
+  @include breakpoint(lg) {
+    margin: 80px auto 0;
+  }
+  @include breakpoint(md) {
+    margin-top: 60px;
+  }
+  @media (max-width: 400px) {
+    margin-top: 40px;
+  }
+}
+
+.more-details__button-text {
+  position: relative;
+  padding-right: 45px;
+  &::after {
+    @include pseudo();
+    top: 5px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid $white;
+    border-bottom: 1px solid $white;
+    transform: rotate(-45deg);
+  }
+}

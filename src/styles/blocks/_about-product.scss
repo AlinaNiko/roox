@@ -1,0 +1,63 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.about-product {
+  padding: 75px 0 90px;
+  background: $darkOrange no-repeat;
+  background-size: cover;
+  background-image: url($imageDir + "background-about-product.jpg");
+  @media (max-width: 1800px) {
+    background-image: url($imageDir + "background-about-product--1800.jpg");
+  }
+  @media (max-width: 1340px) {
+    background-position-x: -300px;
+  }
+  @include breakpoint(lg) {
+    background-image: url($imageDir + "background-about-product--992.jpg");
+    background-position-x: 0;
+  }
+  @include breakpoint(md){
+    padding: 60px 0;
+  }
+  @media (max-width: 320px) {
+    background-image: url($imageDir + "background-about-product--320.jpg");
+  }
+}
+
+.about-product__wrapper {
+  max-width: 587px;
+  margin-left: auto;
+  color: $white;
+  @include breakpoint(lg) {
+    margin: 0 auto;
+  }
+}
+
+.about-product__title {
+  font-weight: 500;
+  font-size: 36px;
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.about-product__list {
+  margin-top: 46px;
+  font-size: 18px;
+  @include breakpoint(md) {
+    margin-top: 36px;
+    font-size: 16px;
+  }
+  @media (max-width: 400px) {
+    margin-top: 26px;
+    font-size: 14px;
+  }
+}
+
+.about-product__item:not(:first-of-type) {
+  margin-top: 20px;
+}

@@ -1,0 +1,146 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+
+.advantages {
+  padding: 90px 0;
+  background: $white url($imageDir + "background-advantages.jpg") no-repeat;
+  background-size: cover;
+  @include breakpoint(md){
+    padding: 60px 0;
+  }
+}
+
+.advantages__container {
+  position: relative;
+  flex-direction: column;
+  &::before,
+  &::after {
+    @include pseudo();
+    height: 300px;
+    z-index: 0;
+    @include breakpoint(el) {
+      transform: scale(0.8);
+    }
+    @include breakpoint(md){
+      display: none;
+    }
+  }
+  &::before {
+    top: 70px;
+    left: 30px;
+    width: 300px;
+    background: url($imageDir + "advantages-UIDM.png") no-repeat;
+    @include breakpoint(el) {
+      left: 0;
+    }
+    @media (max-width: 1020px) {
+      left: 50%;
+      margin-left: -150px;
+      opacity: .2;
+    }
+    @include breakpoint(md) {
+      top: -20px;
+    }
+  }
+  &::after {
+    bottom: 0;
+    right: 30px;
+    width: 319px;
+    background: url($imageDir + "advantages-Roox.png") no-repeat;
+    @include breakpoint(el) {
+      right: 0;
+    }
+    @media (max-width: 1020px) {
+      bottom: -80px;
+      left: 50%;
+      margin-left: -150px;
+      opacity: .2;
+    }
+    @include breakpoint(md) {
+      bottom: -90px;
+    }
+  }
+}
+
+.advantages__subtitle {
+  font-weight: 500;
+  font-size: 36px;
+  @media (max-width: 1020px) {
+    text-align: center;
+  }
+  @include breakpoint(md) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.advantages__list {
+  margin-top: 50px;
+  font-weight: 200;
+  font-size: 24px;
+  @include breakpoint(md) {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+}
+
+.advantages__item:not(:first-of-type) {
+  margin-top: 30px;
+  @include breakpoint(md) {
+    margin-top: 15px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 50px; //55px
+  &::before {
+    @include pseudo();
+    top: 50%;
+    left: 0;
+    margin-top: -16px;
+    width: 30px ;
+    height: 15px;
+    border-left: 3px solid #00a137;
+    border-bottom: 3px solid #00a137;
+    transform: rotate(-45deg);
+  }
+  @media (max-width: 400px) {
+    padding-left: 35px;
+    &::before {
+      margin-top: -10px;
+      width: 20px ;
+      height: 10px;
+    }
+  }
+}
+
+
+.advantages__wrapper--for-operators {
+  max-width: 670px;
+  margin-left: auto;
+}
+
+.advantages__wrapper--for-users {
+  max-width: 570px;
+  margin-top: 90px;
+  margin-right: auto;
+  @media (max-width: 617px) {
+    margin-top: 50px;
+  }
+}
+
+.advantages__wrapper {
+  @media (max-width: 1020px) {
+    width: 100%;
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

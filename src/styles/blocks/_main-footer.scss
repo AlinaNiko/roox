@@ -1,0 +1,124 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.main-footer {
+  // Прижимаем футер к низу экрана
+  margin-top: auto;
+  padding: 50px 0;
+  color: $white;
+  background: $darkOrange url($imageDir + "background-footer.jpg") no-repeat;
+  background-size: cover;
+  @include breakpoint(md){
+    padding: 30px 0;
+    background-image: url($imageDir + "background-footer--768.jpg");
+  }
+  @media (max-width: 320px) {
+    background-image: url($imageDir + "background-footer--320.jpg");
+  }
+}
+
+.main-footer__container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include breakpoint(md) {
+    flex-direction: column;
+  }
+}
+
+.main-footer__title {
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+  @include breakpoint(md) {
+    text-align: center;
+  }
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-footer__wrapper--add-info {
+  align-items: flex-start;
+  max-width: 470px;
+  @include breakpoint(md) {
+    order: 1;
+    align-items: center;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+
+.main-footer__wrapper--links {
+  align-items: flex-end;
+  max-width: 200px;
+  @include breakpoint(md) {
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.main-footer__paragraph {
+  margin-top: 30px;
+  font-size: 18px;
+  @include breakpoint(md) {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.main-footer__paragraph--small {
+  font-weight: 200;
+  font-size: 14px;
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
+}
+
+
+.main-footer__developer {
+  margin-top: 50px;
+  @include breakpoint(md) {
+    margin-top: 25px;
+  }
+}
+
+.main-footer__social {
+  margin-top: 30px;
+  @include breakpoint(md) {
+    margin-top: 15px;
+  }
+}
+
+.main-footer__contact {
+  margin-top: 20px;
+  font-size: 18px;
+  @include breakpoint(md) {
+    font-size: 16px;
+  }
+  /*@media (max-width: 400px) {
+    font-size: 14px;
+  }*/
+}
+
+.main-footer__contact-link,
+.main-footer__privacy-link {
+  color: inherit;
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.main-footer__button {
+  margin-top: 20px;
+
+}
+

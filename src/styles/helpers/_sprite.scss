@@ -1,0 +1,95 @@
+%svg-common {
+	background: url("../icons/sprite.svg") no-repeat;
+}
+
+%-svg-capability1 {
+	@extend %svg-common;
+	background-position: 0 0;
+	width: 70px;
+	height: 70px;
+}
+
+%-svg-capability2 {
+	@extend %svg-common;
+	background-position: 0 8.373205741626794%;
+	width: 70px;
+	height: 70px;
+}
+
+%-svg-capability3 {
+	@extend %svg-common;
+	background-position: 0 16.74641148325359%;
+	width: 70px;
+	height: 70px;
+}
+
+%-svg-capability4 {
+	@extend %svg-common;
+	background-position: 0 25.119617224880383%;
+	width: 70px;
+	height: 70px;
+}
+
+%-svg-capability5 {
+	@extend %svg-common;
+	background-position: 0 33.49282296650718%;
+	width: 70px;
+	height: 70px;
+}
+
+%-svg-capability6 {
+	@extend %svg-common;
+	background-position: 0 41.866028708133975%;
+	width: 70px;
+	height: 70px;
+}
+
+%-svg-company {
+	@extend %svg-common;
+	background-position: 0 53.43511450381679%;
+	width: 120px;
+	height: 120px;
+}
+
+%-svg-icon-facebook {
+	@extend %svg-common;
+	background-position: 0 61.99770378874857%;
+	width: 35px;
+	height: 35px;
+}
+
+%-svg-icon-instagram {
+	@extend %svg-common;
+	background-position: 0 66.01607347876005%;
+	width: 35px;
+	height: 35px;
+}
+
+%-svg-icon-vk {
+	@extend %svg-common;
+	background-position: 0 70.03444316877153%;
+	width: 35px;
+	height: 35px;
+}
+
+%-svg-operators {
+	@extend %svg-common;
+	background-position: 0 82.06106870229007%;
+	width: 120px;
+	height: 120px;
+}
+
+%-svg-security-payment {
+	@extend %svg-common;
+	background-position: 0 97.32824427480917%;
+	width: 120px;
+	height: 120px;
+}
+
+%-svg-senurable-logo {
+	@extend %svg-common;
+	background-position: 0 100%;
+	width: 97px;
+	height: 21px;
+}
+
