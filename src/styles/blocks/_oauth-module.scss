@@ -17,7 +17,7 @@
   position: relative;
   &::before {
     @include pseudo();
-    right: 0;
+    right: 30px;
     top: 80px;
     width: 413px;
     height: 388px;
